@@ -1486,8 +1486,8 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		border: 0;
-	}
-
+  }
+  
 		.image img {
 			display: block;
 			width: 100%;
@@ -1501,8 +1501,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 100%;
-		}
+      width: 100%;
+    }
 
 		.image.left {
 			float: left;
@@ -1747,9 +1747,11 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		border: 0;
-		background: #35b88f;
-		color: #fff;
+    background: #fff;
+      color: #3A3939;
+      border: 1px solid #3A3939;
+    
+    
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
 		text-decoration: none;
@@ -1765,7 +1767,9 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #45c89f;
+      border: 0;
+		background: #3A3939;
+		color: #fff;
 		}
 
 		input[type="button"].style2,
@@ -1847,20 +1851,20 @@ input, select, textarea {
 		}
 
 			.box.style1 .image {
-				display: block;
+        display: flex;
+        justify-content: center;
 				position: absolute;
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
-				overflow: hidden;
+        overflow: hidden;
+        background-image: url("../../images/pic01.jpg");
 			}
 
 				.box.style1 .image img {
-					position: absolute;
 					top: 0;
-					height: 100%;
-					width: auto;
+          width: 50%;
+          margin: 25px 0;
 				}
 
 			.box.style1 .inner > :last-child {
@@ -2001,7 +2005,8 @@ input, select, textarea {
 		text-align: center;
 		margin: 0;
 		padding: 14em 0 14em 0;
-		cursor: default;
+    cursor: default;
+    height: 100vh;
 	}
 
 		#header header {
@@ -2093,7 +2098,8 @@ input, select, textarea {
 		background: rgba(224, 247, 250, .2) url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
-		background-size: 125% auto;
+    background-size: 125% auto;
+    height: 100vh;
 	}
 
 		#banner .button {
