@@ -163,7 +163,7 @@ input, select, textarea {
 		color: #35b88f;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+    border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 	}
 
 		a:hover {
@@ -1697,7 +1697,11 @@ input, select, textarea {
 	form ul.actions {
 		margin-bottom: 0;
 		text-align: center;
-	}
+  }
+  
+  form .send-button {
+    border: 1px solid #3a3939;
+  }
 
 /* Table */
 
@@ -1748,10 +1752,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
     background: #fff;
-      color: #3A3939;
-      border: 1px solid #3A3939;
-    
-    
+    color: #3A3939;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
 		text-decoration: none;
@@ -1767,9 +1768,9 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-      border: 0;
 		background: #3A3939;
-		color: #fff;
+    color: #fff;
+    border-color: #fff;
 		}
 
 		input[type="button"].style2,
@@ -1863,8 +1864,7 @@ input, select, textarea {
 
 				.box.style1 .image img {
 					top: 0;
-          width: 50%;
-          margin: 25px 0;
+          padding: 2em 3em;
 				}
 
 			.box.style1 .inner > :last-child {
@@ -2051,7 +2051,11 @@ input, select, textarea {
 			bottom: 9em;
 			margin: 0;
 			width: 100%;
-		}
+    }
+    
+    #header footer a {
+      border: none;
+    }
 
 			#header footer:after {
 				content: '';
@@ -2098,13 +2102,13 @@ input, select, textarea {
 		background: rgba(224, 247, 250, .2) url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
-    background-size: 125% auto;
-    height: 100vh;
+    background-size: 150%;
+    min-height: 100vh;
 	}
 
 		#banner .button {
 			color: #3a3939;
-			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+      text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
 		}
 
 		#banner header {
@@ -2119,12 +2123,12 @@ input, select, textarea {
 
 		#banner p {
       margin: 0 auto;
-      width: 55%;
+      width: 70%;
       text-align: left;
 		}
 
 		#banner footer {
-			margin: 2em 0 0 0;
+			margin: 4em 0 0 0;
 		}
 
 		#banner a {
@@ -2163,9 +2167,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #35b88f;
-				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-				border-bottom-color: rgba(53, 184, 143, 0.5);
+				border: none;
 			}
 
 		#footer .icons {
@@ -2512,7 +2514,7 @@ input, select, textarea {
 			.button {
 				padding: 0.75em 0 0.75em 0;
 				width: 100%;
-				max-width: 320px;
+        max-width: 320px;
 			}
 
 		/* Box */
